@@ -4,3 +4,7 @@
 [工作相关](https://github.com/minooo/Notes/tree/master/work)
 
 [遇到的一些坑](https://github.com/minooo/Notes/tree/master/trap)
+
+[前端每日一问答](https://github.com/minooo/Notes/tree/master/Q&A)
+
+[生活类](https://github.com/minooo/Notes/tree/master/myLife)
