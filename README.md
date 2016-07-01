@@ -10,3 +10,5 @@
 [生活类](https://github.com/minooo/Notes/tree/master/myLife)
 
 [课程资源](https://github.com/minooo/Notes/tree/master/courseResources)
+
+[前端巧技](https://github.com/minooo/Notes/tree/master/skill)
