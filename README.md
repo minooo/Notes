@@ -7,7 +7,7 @@
 
 [前端每日一问答](https://github.com/minooo/Notes/tree/master/Q&A)
 
-[生活类](https://github.com/minooo/Notes/tree/master/myLife)
+[软件类](https://github.com/minooo/Notes/tree/master/software)
 
 [课程资源](https://github.com/minooo/Notes/tree/master/courseResources)
 
