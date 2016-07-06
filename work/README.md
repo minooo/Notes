@@ -10,3 +10,6 @@
 ### 2016-06-30 工作计划
 > - 加载组件制作(思路，没有数据的话，则渲染这个组件)
 > - 好店分类异步数据导入
+
+### 数据引入api导致问题，需要把api里的网址改成dev
+> 在middleware/api 中 `const API_ROOT = 'http://dev.dolife.me/api/web'`

@@ -40,4 +40,14 @@ connect(1,2)(3)
 }
 ```
 
-#### 
+#### 摒弃使用 {...this.props}，应如下这么做。
+```js
+function MyDiv(props) {
+  const { layout, ...rest } = props
+  if (layout === 'horizontal') {
+    return <div {...rest} style={getHorizontalStyle()} />
+  } else {
+    return <div {...rest} style={getVerticalStyle()} />
+  }
+}
+```
