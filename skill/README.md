@@ -15,3 +15,7 @@
 ### 关于三元运算和&&择优应用
     如果判断，如果是真则有，假则无的情况，比如 isRight ? your code... : null 
     不如这样用 isRight && your code...
+    
+### React中对标签内如果没有内容，应该用单标签形式
+    比如：<i className="hello" ></i>
+    应改为：<i className="hello" />
