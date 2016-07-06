@@ -11,3 +11,7 @@
     text-align: center;
 }
 ```
+
+### 关于三元运算和&&择优应用
+    如果判断，如果是真则有，假则无的情况，比如 isRight ? your code... : null 
+    不如这样用 isRight && your code...
