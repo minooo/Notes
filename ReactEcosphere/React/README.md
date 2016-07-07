@@ -1,3 +1,6 @@
+## React 是什么？
+> React 是用于构建用户界面的JavaScript库，所以它仅仅是view层。
+
 #### 群内讨论了react-redux 中的connect 函数，如何对双括号理解的问题。有同学是这样解释的，直接上代码
 ```js
 function(){return function(){}}

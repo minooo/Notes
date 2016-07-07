@@ -15,3 +15,7 @@
 [前端巧技](https://github.com/minooo/Notes/tree/master/skill)
 
 [React生态圈](https://github.com/minooo/Notes/tree/master/ReactEcosphere)
+
+[node-npm](https://github.com/minooo/Notes/tree/master/nodeNpm)
+
+[Package](https://github.com/minooo/Notes/tree/master/Package)
