@@ -51,3 +51,4 @@ function MyDiv(props) {
   }
 }
 ```
+[关于这一点的官方说明](https://facebook.github.io/react/warnings/unknown-prop.html)
