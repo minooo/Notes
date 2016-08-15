@@ -21,3 +21,7 @@
 1. ####MIT
 
     MIT是和BSD一样宽范的许可协议，作者只想保留版权，而无任何其他了限制。也就是说，你必须在你的发行版里包含原许可协议的声明，无论你是以二进制发布的还是以源代码发布的。
+    
+#### 修改远程仓库地址的正确姿势
+    命令，比如：`git remote set-url origin git@git.coding.net:dudukeji/dolife_frontend.git`
+    另外，直接修改项目目录下的 .git 内的 config 文件即可。
