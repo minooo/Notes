@@ -10,5 +10,13 @@
   不过大多数时候，我们还是用JavaScript这个词。如果你遇到ECMAScript这个词，简单把它替换为JavaScript就行了。
   
 #### Array
-<iframe height='265' scrolling='no' src='//codepen.io/minooo/embed/ZOwVvJ/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/minooo/pen/ZOwVvJ/'>ZOwVvJ</a> by minooo (<a href='http://codepen.io/minooo'>@minooo</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
+> js的`Array`可以包含任意数据类型，并通过索引来访问每个元素。  
+
+- `lenght` : 数组的长度
+- `indexOf()` : 搜索一个指定元素的位置，如果不存在返回 -1；一般用来判断数组中是否存在某元素
+- `slice()` : 截取数组的部分元素，然后返回一个新元素
+    - 它的起止参数包括开始索引，不包括结束索引
+    - 如果只有一个参数，则会从该参数的索引截取到数组末尾
+    - 如果没有参数，则会从头到尾截取所有元素，利用这一点，可以很容易复制一个数组。
+    - 如果参数大于数组的最大索引，则返回空数组。
+- 不能直接用==或者===来判断两个数组是否相等，无论是相等还是全等都不行。
