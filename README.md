@@ -20,4 +20,6 @@
 
 [Package](https://github.com/minooo/Notes/tree/master/Package)
 
+[python 学习](https://github.com/minooo/Notes/tree/master/Python)
+
 [markdown语法](https://segmentfault.com/markdown)
