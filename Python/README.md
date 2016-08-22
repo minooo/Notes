@@ -68,3 +68,19 @@ else:
 - 申明了UTF-8编码并不意味着你的.py文件就是UTF-8编码的，必须并且要确保文本编辑器正在使用UTF-8 without BOM编码
 - 在 python 中，使用 % 实现格式化方式。
 - 占位符， %d 整数；%f 浮点数；%s 字符串；%x 十六进制整数
+
+### list 和 tuple
+- python 内置的一种数据类型是列表： list。
+    classmates = ['M', 'H', 'B']
+- 可以使用 `len()` 函数获取列表的个数；
+- 可以使用索引来访问list中的每一个位置的元素，从 0 开始。如： classmates[0], 可以使用 `-1` 做索引，直接获取最后一个元素。
+- 一次类推，倒数第二个是 classmates[-2],如果越界了就会报错。
+- 添加/删除元素是：
+    - 末尾添加：classmates.append('Adam')
+    - 指定位置添加：classmates.insert(1, 'Jack')
+    - 末尾删除：classmates.pop()
+    - 指定位置删除：classmates.pop(2)
+    - 指定位置替换元素：classmates[1] = 'minooo'
+- 另外一种有序列表叫tuple（元组）。这是不可变数组，一旦初始化就不可修改。
+- 定义一个空的tuple，可以：t = ()
+- 定义只有一个元素的tuple，可以：t=(1,),这是为了避免歧义
