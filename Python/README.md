@@ -84,3 +84,25 @@ else:
 - 另外一种有序列表叫tuple（元组）。这是不可变数组，一旦初始化就不可修改。
 - 定义一个空的tuple，可以：t = ()
 - 定义只有一个元素的tuple，可以：t=(1,),这是为了避免歧义
+
+### if else 语句
+```js
+height = 1.8
+weight = 84
+ 
+a = int(height)
+b = int(weight)
+ 
+bmi = b/(a^2)
+ 
+if bmi > 32:
+    print('严重肥胖')
+elif bmi >= 28:
+    print('肥胖', bmi)
+elif bmi >= 25:
+    print('过重')
+elif bmi >= 18.5:
+    print('正常')
+else:
+    print('过轻')
+```
