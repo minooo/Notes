@@ -106,3 +106,22 @@ elif bmi >= 18.5:
 else:
     print('过轻')
 ```
+
+### 循环
+- `for...in...` 循环，依次把list或tuple中的每个元素迭代出来，看例子
+```js
+names = ['M', 'N', 'A']
+for x in names:
+    print(name)
+```
+
+- 如果要计算1-100的整数之和，从1写到100有点困难，幸好Python提供一个`range()`函数，可以生成整数数列，再通过`list()`函数可以转化为list
+- 第二种循环是while循环，只要条件满足就不断循环。
+```js
+sum = 0
+n = 1
+while n < 100:
+    sum = sum + n
+    n = n + 2
+print(sum)
+```
