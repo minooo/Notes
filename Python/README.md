@@ -222,3 +222,51 @@ L = ['a', 'b', 'c', 'd', 'e', 'f']
 - 所有元素每3个取一个：`L[::3]`
 - 原样复制一个：`L[:]`
 - 字符串也有类似方式，只是操作结果仍是字符串，这里不再赘述。
+
+### 迭代（Interation)
+- 在python中，迭代是通过`for...in`来完成的
+```python
+>>> d = {'a':1, 'b':2, 'c':3}
+for key in d:
+    print(key) // a b c
+    
+for value in d.values():
+    print(value) // 1 2 3
+    
+fro k,v in d.items():
+    print(k+':', v) // a: 1  b: 2  c: 3
+```
+
+- 字符串也是可迭代对象，因此也可以用作`for`循环
+```python
+>>> for ch in 'ABC'
+        print(ch) // A  B  C
+```
+
+- 通过`collections`模块的`Iterable`类型判断一个对象是否是可迭代对象
+```python
+>>> from collectons import Iterable
+>>> isinstance('abc', Iterable) // True
+>>> isinstance([1,2,3], Iterable) // True
+>>> isinstance(123, Iterable) // False
+```
+
+- 如果要对list实现类似Java那样的下表循环，可以使用Python内置的`enumerate`函数把list变成索引-元素对
+```python
+>>> for i, value in enumerate(['A', 'B', 'C']):
+        print(i, value)
+        
+0 A
+1 B
+2 C
+```
+
+- `for`循环里同时引用两个变量，在python里很常见
+```python
+>>> for x, y in [(1,1), (2,4), (3,9)]:
+        print(x, y)
+        
+1 1
+2 4
+3 9
+```
