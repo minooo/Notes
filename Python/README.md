@@ -270,3 +270,46 @@ fro k,v in d.items():
 2 4
 3 9
 ```
+
+### 列表生成式
+- 可以用`list(range(1, 4))` 生成list`[1, 2, 3]`
+
+- 如果生成`[1x1, 2x2, 3x3]`怎么做
+    - 方法1
+    ```
+    L = []
+    for x in range(1,4):
+        L.append[x*x]
+    ```
+    - 方法2
+    ```
+    [x * x for x in range(1, 4)]
+    ```
+    
+- for循环后面还可以加上if判断，比如，仅选出偶数的平方
+```
+[x * x for x in range(1, 11) if x %2 ==0]
+```
+
+- 可以使用两层循环生成全排列，三层及以上就很少用了
+```
+[x + y for x in 'ABC' for y in 'XYZ']
+```
+
+- for循环甚至使用多个循环变量，比如 dict 的 items() 可以同时迭代 key 和 value
+```
+d = {'x': 'A', 'y': 'B', 'z': 'C'}
+L = []
+for k, v in d.items():
+    L.append(k + '=' + v)
+    
+ // 如果用列表生成式来处理则更为简洁
+ [k + '=' + v for k, v in d.items()]
+    
+```
+
+- 最后，把一个list中的所有字符串变成小写
+```
+L = ['Hello', 12, 'World', None]
+[x.lower() for x in L if isinstance(x, str)]
+```
