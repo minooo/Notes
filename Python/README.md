@@ -313,3 +313,26 @@ for k, v in d.items():
 L = ['Hello', 12, 'World', None]
 [x.lower() for x in L if isinstance(x, str)]
 ```
+
+*** 生成器
+- 如果在循环过程中不断推算出后续的元素，可以节省大量的空间，在python中，这种一边循环一边计算的机制称为生成器：generator
+- 创建generator很简单，只需要把列表生成式的 `[]` 改成 `()`，就创建了一个generator。
+```
+>>> g = (x * x for x in range(10))
+```
+如果要一个一个打印，可以通过 `next()` 函数获取generator的下一个返回值。
+```
+>>> next(g)
+0
+>>> next(g)
+1
+>>> next(g)
+4
+```
+generator保存的是算法，每次调用 `next(g)`,就计算出`g`的下一个值，知道计算到最后一个元素，直到没有更多元素时，会抛出`StopIteration`错误。
+- 然后不断调用`next(g)`太二逼了，正确的方法是使用`for`循环。因为generator也是可迭代对象。
+```
+>>> g = (x * x for x in range(10))
+for n in g:
+    print(n)
+```
