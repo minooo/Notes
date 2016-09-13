@@ -336,3 +336,36 @@ generator保存的是算法，每次调用 `next(g)`,就计算出`g`的下一个
 for n in g:
     print(n)
 ```
+
+### 迭代器
+直接作用于`for`循环的数据类型，  
+一类是：dict,list,tuple,set,str  
+一类是：generator，包括生成器和带`yield`的generator function。
+这些可以直接作用于for循环的对象称为----可迭代对象，Iterable。
+可以使用`isinstance()`判断一个对象是否是`Iterable`对象。
+```python
+>>> from collections import Iterable
+>>> isinstance([], Iterable)
+True
+```
+
+而生成器不但可以作用于`for`循环，还可以被`next()`函数不断调用并返回下一个值，知道最后  
+抛出`StopIteration`。
+可以被`next()`函数调用并不断返回下一个值的对象称为迭代器：Iterator。
+同上，可以使用`isinstance()`判断一个对象是否是`Iterator`对象。
+
+生成器都是`Iterator`对象，但list, dice, str, tuple, set都然是 Iterable，却不是Iterator。
+把list, dice, tuple, set, str等Iterable转化为Iterator，可以使用`iter()`
+
+课下小结的一点思考
+```python
+>>> def num():
+        n = 1
+        while True:
+            yield n
+            n = n + 1
+            
+>>> next(num()) // 始终为0，原因是每次传入next()都是新的对象
+>>> o = num()
+>>> next(o)   // 1, 2, 3,... 原因是 o 指代了同一个对象。
+```
