@@ -19,3 +19,31 @@
 ### React中对标签内如果没有内容，应该用单标签形式
     比如：<i className="hello" ></i>
     应改为：<i className="hello" />
+    
+### 在React组件中如何添加监听
+```
+export default class Title extends Component {
+  componentDidMount() {
+    window.addEventListener('resize', this.resizeWindow)
+    window.addEventListener('scroll', this.scrollWindow)
+  }
+  resizeWindow = () => {
+    console.log('窗口变化了！')
+  }
+  render() {
+    const { text, linkName, path } = this.props;
+    return (
+      <h3 className={styles.root}>
+        <span className={styles.left}>{text}</span>
+        {
+          linkName &&
+          <Link to={path} className={styles.link}>
+            <em className={styles.text}>{linkName}</em>
+            <i className={`i-you40  ${styles.icon}`} />
+          </Link>
+        }
+      </h3>
+    )
+  }
+}
+```

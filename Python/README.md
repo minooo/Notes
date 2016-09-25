@@ -349,12 +349,12 @@ for n in g:
 True
 ```
 
-而生成器不但可以作用于`for`循环，还可以被`next()`函数不断调用并返回下一个值，知道最后  
+而生成器不但可以作用于`for`循环，还可以被`next()`函数不断调用并返回下一个值，直到最后  
 抛出`StopIteration`。
 可以被`next()`函数调用并不断返回下一个值的对象称为迭代器：Iterator。
 同上，可以使用`isinstance()`判断一个对象是否是`Iterator`对象。
 
-生成器都是`Iterator`对象，但list, dice, str, tuple, set都然是 Iterable，却不是Iterator。
+生成器都是`Iterator`对象，但list, dict, str, tuple, set都然是 Iterable，却不是Iterator。
 把list, dice, tuple, set, str等Iterable转化为Iterator，可以使用`iter()`
 
 课下小结的一点思考
@@ -369,3 +369,6 @@ True
 >>> o = num()
 >>> next(o)   // 1, 2, 3,... 原因是 o 指代了同一个对象。
 ```
+
+### 函数式编程
+函数式编程的一个特点就是，允许把函数本身作为参数传入另一个函数，还允许返回一个函数！
