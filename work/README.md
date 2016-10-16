@@ -13,3 +13,6 @@
 
 ### 数据引入api导致问题，需要把api里的网址改成dev
 > 在middleware/api 中 `const API_ROOT = 'http://dev.dolife.me/api/web'`
+
+### github 数据接口
+> https://api.github.com/users/minooo
