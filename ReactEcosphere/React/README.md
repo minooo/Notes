@@ -2,7 +2,7 @@
 > React 是用于构建用户界面的JavaScript库，所以它仅仅是view层。
 
 #### 群内讨论了react-redux 中的connect 函数，如何对双括号理解的问题。有同学是这样解释的，直接上代码
-```js
+```
 function(){return function(){}}
 
 function connect(a,b){return function(c){console.log(a,b,c)}}
@@ -21,7 +21,7 @@ connect(1,2)(3)
 
 #### Babel的配置文件是.babelrc，存放在项目的根目录下。使用Babel的第一步就是配置这个文件。
 该文件用来设置转码规则和插件，基本格式如下。
-```javascript
+```
 {
     "presets": [],
     "plugins": []
@@ -32,7 +32,7 @@ connect(1,2)(3)
     react转码规则：babel-preset-react
     ES7不同阶段语法提案的转码规则：babel-preset-stage-0（0，1，2，3）
 然后将这些规则加入 .babelrc
-```javascript
+```
 {
     "presets": [
         "es2015",
@@ -44,7 +44,7 @@ connect(1,2)(3)
 ```
 
 #### 摒弃使用 {...this.props}，应如下这么做。
-```js
+```
 function MyDiv(props) {
   const { layout, ...rest } = props
   if (layout === 'horizontal') {
